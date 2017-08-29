@@ -53,7 +53,7 @@ body {
 
 .lp-container {
   @include font-size(12px);
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
 
   line-height: 1;
@@ -63,28 +63,32 @@ body {
   text-align: center;
   h1,
   h2,
-  h4 {
+  h4,
+  p {
     color: $black;
   }
 
   header {
     position: relative;
-    p> img {
-      width: 100%;
-      margin: 20px 0;
+    padding: 0 !important;
+    img {
+      &.header-img {
+        width: 100%;
+        margin: 20px 0;
+      }
       &.mobile {
-        display: none;
+        display: none !important;
       }
       &.dsk {
-        display: inherit;
+        display: inherit !important;
       }
       @include bp-medium {
         margin: 10px 0;
         &.mobile {
-          display: inherit;
+          display: inherit !important;
         }
         &.dsk {
-          display: none;
+          display: none !important;
         }
       };
     }
@@ -123,7 +127,7 @@ body {
       @include font-size(30px);
     };
     font-family: $font-blackcond;
-    margin: 10px 10px;
+    margin: 10px;
 
   }
   .header-title-sm {
@@ -136,7 +140,8 @@ body {
     };
     font-family: $font-boldcond;
     text-transform: uppercase;
-    margin: 10px 10px;
+    max-width: 100%;
+    margin: 10px;
   }
 
   .header-tagline {

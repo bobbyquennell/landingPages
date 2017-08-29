@@ -75,33 +75,33 @@
 
 html, body { height: 80%; margin: 0; padding: 0; }
 
-.lp-container { font-size: 12px; font-size: 0.75rem; width: 90%; margin: 20px auto; line-height: 1; font-family: "Open Sans", sans-serif; font-weight: 400; color: #231f20; text-align: center; }
+.lp-container { font-size: 12px; font-size: 0.75rem; width: 100%; margin: 20px auto; line-height: 1; font-family: "Open Sans", sans-serif; font-weight: 400; color: #231f20; text-align: center; }
 
-.lp-container h1, .lp-container h2, .lp-container h4 { color: #231f20; }
+.lp-container h1, .lp-container h2, .lp-container h4, .lp-container p { color: #231f20; }
 
-.lp-container header { position: relative; }
+.lp-container header { position: relative; padding: 0 !important; }
 
-.lp-container header p > img { width: 100%; margin: 20px 0; }
+.lp-container header img.header-img { width: 100%; margin: 20px 0; }
 
-.lp-container header p > img.mobile { display: none; }
+.lp-container header img.mobile { display: none !important; }
 
-.lp-container header p > img.dsk { display: inherit; }
+.lp-container header img.dsk { display: inherit !important; }
 
-@media only screen and (max-width: 40em) { .lp-container header p > img { margin: 10px 0; }
-  .lp-container header p > img.mobile { display: inherit; }
-  .lp-container header p > img.dsk { display: none; } }
+@media only screen and (max-width: 40em) { .lp-container header img { margin: 10px 0; }
+  .lp-container header img.mobile { display: inherit !important; }
+  .lp-container header img.dsk { display: none !important; } }
 
 .lp-container hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 
 .header-title { top: 280px; background-color: #fff; margin-left: auto; margin-right: auto; padding-top: 20px; }
 
-.header-title .header-title-lg { font-size: 70px; font-size: 4.375rem; font-family: "Interstate-BlackCond", sans-serif; margin: 10px 10px; }
+.header-title .header-title-lg { font-size: 70px; font-size: 4.375rem; font-family: "Interstate-BlackCond", sans-serif; margin: 10px; }
 
 @media only screen and (max-width: 40em) { .header-title .header-title-lg { font-size: 40px; font-size: 2.5rem; } }
 
 @media only screen and (max-width: 30em) { .header-title .header-title-lg { font-size: 30px; font-size: 1.875rem; } }
 
-.header-title .header-title-sm { font-size: 30px; font-size: 1.875rem; font-family: "Interstate-BoldCond", sans-serif; text-transform: uppercase; margin: 10px 10px; }
+.header-title .header-title-sm { font-size: 30px; font-size: 1.875rem; font-family: "Interstate-BoldCond", sans-serif; text-transform: uppercase; max-width: 100%; margin: 10px; }
 
 @media only screen and (max-width: 40em) { .header-title .header-title-sm { font-size: 25px; font-size: 1.5625rem; } }
 
